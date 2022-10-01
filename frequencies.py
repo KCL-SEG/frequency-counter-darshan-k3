@@ -6,8 +6,9 @@ def frequencies(items):
     #e.g. items = [a,b,a,a,a,a,b,a]
     frequencies = {}
     for item in items:
-        if(frequencies.get(item) == None):
-            frequencies[str(item)] = 1
+        stringItem = str(item)
+        if(frequencies.get(stringItem) == None):
+            frequencies[stringItem] = 1
         else:
-            frequencies[str(item)] = frequencies.get(item) + 1
+            frequencies[stringItem] = frequencies.get(stringItem) + 1
     return frequencies
